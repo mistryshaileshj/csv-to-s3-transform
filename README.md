@@ -29,4 +29,4 @@ Explain what the output looks like — grouped stats, final CSV with selected co
 This script is designed to run inside AWS Glue, but can be adapted to run locally with a Spark environment.
 
 ## Author
-Shailesh Mistry – [LinkedIn](www.linkedin.com/in/shailesh-mistry-a346659)
+Shailesh Mistry – [LinkedIn](https://www.linkedin.com/in/shailesh-mistry-a346659)
