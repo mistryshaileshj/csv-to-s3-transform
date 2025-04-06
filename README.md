@@ -23,7 +23,7 @@ This project demonstrates an AWS Glue ETL script that:
 Provide a sample of your CSV file or a few rows here.
 
 ## Output Example
-Explain what the output looks like — grouped stats, final CSV with selected columns, etc.
+Sample output is a grouped stats based on subscription month and year. A sample csv file is created with selected columns along with transformations.
 
 ## How to Run
 This script is designed to run inside AWS Glue, but can be adapted to run locally with a Spark environment.
