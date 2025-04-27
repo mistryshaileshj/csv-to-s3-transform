@@ -20,7 +20,7 @@ glueContext = GlueContext(sc)
 spark = glueContext.spark_session
 
 # Define S3 path of the CSV file
-s3_path = "s3://miscellaneous-vertica-archive-data/customers.csv"
+s3_path = "s3://vertica-data/customers.csv"
 
 # Read CSV file into a DynamicFrame
 dynamic_frame = glueContext.create_dynamic_frame.from_options(
@@ -98,7 +98,7 @@ df.select("First Name", "Last Name", "Full name", "Subscription Date", "Month - 
 df = df.select("First Name", "Last Name", "Full name", "Subscription Date", "Month - Year", "Website", "Web Protocol")
 
 # Define output path in S3
-output_path = "s3://miscellaneous-vertica-archive-data/temp-csv-output/"
+output_path = "s3://vertica-data/temp-csv-output/"
 final_output_key = "final_output.csv"
 
 print(f"output_path : {output_path}")
@@ -118,7 +118,7 @@ time.sleep(5)
 
 # Rename part file to final_output.csv using boto3
 s3 = boto3.client("s3")
-bucket = "miscellaneous-vertica-archive-data"
+bucket = "vertica-data"
 prefix = "temp-csv-output/"
 
 #get list of files from the specified bucket
