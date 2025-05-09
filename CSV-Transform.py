@@ -109,7 +109,7 @@ print(f"final_output_key : {final_output_key}")
  #   .option("header", "true") \
  #  .csv(output_path)
 
-df.coalesce(1).write.mode("overwrite") \
+df.write.mode("overwrite") \
     .option("header", "true") \
     .csv(output_path)
 
